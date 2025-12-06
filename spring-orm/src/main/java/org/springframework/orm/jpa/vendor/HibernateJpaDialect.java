@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2020 the original author or authors.
+ * Copyright 2002-2021 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,9 +19,8 @@ package org.springframework.orm.jpa.vendor;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceException;
-
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceException;
 import org.hibernate.ConnectionReleaseMode;
 import org.hibernate.FlushMode;
 import org.hibernate.HibernateException;
@@ -74,7 +73,7 @@ import org.springframework.transaction.support.ResourceTransactionDefinition;
 
 /**
  * {@link org.springframework.orm.jpa.JpaDialect} implementation for
- * Hibernate EntityManager. Developed against Hibernate 5.2/5.3/5.4.
+ * Hibernate EntityManager.
  *
  * @author Juergen Hoeller
  * @author Costin Leau
